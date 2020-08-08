@@ -1,0 +1,128 @@
+.main
+	background-color: #222c42
+
+	>.container
+		display: flex
+		justify-content: space-between
+	
+	&__sign-up
+		padding: 
+			top: 50px
+			bottom: 50px
+		max-width: 320px 
+		position: relative
+
+		>.title
+			margin-bottom: 15px
+
+		&::after, &::before
+			content: url("../static/img/main/crystal.png")
+			position: absolute
+		
+		&::after
+			right: -118px
+			bottom: 20px
+			transform: rotateZ(-6deg)
+		
+		&::before
+			z-index: 0
+			top: -109px
+			left: -166px
+			transform: rotateZ(-163deg)
+	
+	&__inscr
+		color: #8c91ba
+		font-size: 12px
+		font-weight: 400
+		text-align: center
+
+		&:last-child
+			text-decoration: underline
+			cursor: pointer
+
+	&__nets-list
+		margin: 12px auto 12px auto
+		display: flex
+		justify-content: space-between
+		width: 230px
+
+	&__net
+		border-radius: 100%
+		width: 33px
+		height: 33px
+		display: flex
+		justify-content: center
+		align-items: center
+
+		@for $i from 1 through 5
+			&:nth-child(#{$i})
+				background-color: nth($nets-bg, $i)
+
+		&>i
+			color: #fff
+			font-size: 21px
+			cursor: pointer
+	
+	&__form
+		margin-top: 10px
+
+	&__input, &__currency
+		border: 1px solid $footer-text-color
+		background-color: transparent
+		padding: 9px 6px 6px 14px
+		color: #8c91ba
+		margin-bottom: 12px
+
+		&::placeholder
+			color: #8c91ba
+
+	&__input
+		border-radius: 17px
+
+		&[type="email"]
+			width: 100%
+
+		&[type="password"]
+			width: 69%
+			margin-right: 1%
+
+		&[type="text"]
+			width: 50%
+
+	&__input-wrapper:nth-child(2)
+		+addInputIcon('\e803', #8c91ba, 20px)
+
+	&__input-wrapper:nth-child(5)
+		+addInputIcon('?', #8c91ba, 14px)
+
+	&__currency
+		border-radius: 7px
+		width: 28.5%
+		padding: 8px 0px 6px 1px
+
+	&__label
+		color: #8c91ba
+		font-size: 12px
+		font-weight: 400
+		display: flex
+		justify-content: baseline
+		align-items: center
+		margin-bottom: 5px
+
+		&>a
+			text-decoration: underline
+			color: #8c91ba
+			margin-left: 3px
+
+	&__register
+		margin: 25px auto 8px auto
+		width: 124px
+		border-radius: 17px
+		border: none
+		background-color: $accent-color
+		color: #000000
+		font-size: 14px
+		font-weight: bold
+		padding: 7px 0 7px 0
+
+

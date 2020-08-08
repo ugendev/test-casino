@@ -1,0 +1,71 @@
+.header
+	height: 72px
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+	background-color: $dark-bg
+	position: relative
+	z-index: 1
+
+	&>.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 100%
+	
+	&__navigation
+		font-size: 18px
+		font-weight: 700
+		min-width: calc(300 / (1420 / 100) * 1%)
+		display: flex
+		justify-content: space-between
+		align-items: center
+		a
+			display: block
+
+	&__search
+		color: $accent-color
+
+	&__logo
+		display: flex
+		align-items: center
+
+		>i
+			font-size: 40px
+			color: #fff
+			margin-right: 5px
+		
+	&__title
+		color: #fff
+		font-size: 20px
+		font-weight: 700
+		text-transform: uppercase	
+
+	&__buttons
+		display: flex
+		justify-content: space-between
+		width: calc(260 / (1420 / 100) * 1%)
+	
+	&__deposit
+		width: 115px
+		height: 39px
+		border-radius: 100px
+		background-color: $accent-color
+		color: #000
+		text-align: center
+		border: none
+		font-size: 16px
+		font-weight: 700
+		line-height: 15px
+
+	&__log-in
+		width: 129px
+		height: 39px
+		border-radius: 100px
+		border: 1px solid #fff
+		background-color: transparent
+		color: #fff
+		font-size: 16px
+		font-weight: 700	
+
+	&__icon-user
+		color: $accent-color
+		margin-right: 3px
