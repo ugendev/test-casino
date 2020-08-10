@@ -1,0 +1,68 @@
+.slider
+	width: 68%
+	box-shadow: 0 0 40px 5px rgba(0, 0, 0, .9)
+	position: relative
+
+	&__item
+		height: 100%
+		padding: 
+			top: 60px
+			left: 66px
+
+	&__item:first-child
+		background: url("../static/img/slider/slider-item-1.jpg") left center / cover no-repeat
+
+	&__arrows
+		display: flex
+		justify-content: space-between
+		color: #fff
+		font-size: 18px
+		width: 74px
+	
+	&__arrow
+		width: 33px
+		height: 33px
+		border: 1px solid #595959
+		border-radius: 100%
+		display: flex
+		justify-content: center
+		align-items: center
+
+	&__label
+		color: $accent-color
+		font-size: 14px
+		font-weight: 500
+		text-transform: uppercase
+		margin-top: 20px
+		margin-bottom: 15px
+
+	&__divider
+		width: 96px
+		height: 3px
+		background-color: #fff
+		margin-top: 16px
+
+	&__descr
+		font-size: 14px
+		color: #fff
+		margin-top: 20px
+		margin-bottom: 30px
+
+	&__state
+		position: absolute	
+		display: flex
+		justify-content: space-evenly
+		width: 95%	
+		bottom: 20px		
+		left: 50%;
+		transform: translateX(-50%)
+
+	&__indicator
+		width: 22%
+		height: 5px
+		border-radius: 50px
+		background-color: rgba(72, 80, 143, 0.7)
+		cursor: pointer
+
+		&_active
+			background-color: $accent-color
