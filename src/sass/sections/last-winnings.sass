@@ -1,0 +1,39 @@
+.last-winnings
+	box-shadow: 0 0 14px rgba(0, 0, 0, 0.25)
+	background-color: #20263e
+	padding: 15px 0
+
+	& > div
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__items
+		display: flex
+		width: 85%
+		justify-content: space-between
+
+	&__item
+		display: flex
+
+		&-content
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+			margin-left: 5px
+
+		&-name
+			color: #fff
+			font-size: 13px
+			text-align: left
+
+		&-game
+			font-size: 13px
+			color: $accent-color
+			text-decoration: underline
+
+		&-score
+			font-size: 14px
+			color: #fff
+			font-weight: 500
+	

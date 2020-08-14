@@ -12,3 +12,21 @@
 		line-height: 15px
 		color: $color
 		cursor: pointer
+
+=addLabel($label-text, $padding-vert, $padding-hor)
+	content: $label-text
+	position: absolute
+	display: inline
+	padding: #{$padding-vert}px #{$padding-hor}px
+	background-image: linear-gradient(to right,#eb0255 0%, #eb0255 70%, #251268 100%)
+	color: #ffffff
+	font-size: 14px
+	font-weight: 400
+	top: 26px
+	right: 0
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 10% 50%);
+
+=addGamesImages($directory, $images-names, $format)
+	@for $i from 1 through 9
+			&:nth-child(#{$i})
+				background-image: url("../static/img/#{$directory}/#{nth($images-names, $i)}.#{$format}")
