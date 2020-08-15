@@ -68,8 +68,8 @@ gulp.task("fonts", function() {
 gulp.task("watch", function() {
 	gulp.watch("src/sass/**/*.(sass|css|scss)", gulp.parallel("styles"));
 	gulp.watch("src/*.html").on("change", gulp.parallel("htmlmin"));
-	gulp.watch("src/static/img/**/*.*").on("change", gulp.parallel("imagemin"));
-	gulp.watch("src/static/icons/**/*.*").on("change", gulp.parallel("iconmin"));
+	gulp.watch("src/static/**/*.*").on("change", gulp.parallel("imagemin"));
+	gulp.watch("src/static/**/*.*").on("change", gulp.parallel("iconmin"));
 });
 
 gulp.task("default", gulp.parallel("watch", "server", "styles", "htmlmin", "imagemin", "iconmin", "fonts"));

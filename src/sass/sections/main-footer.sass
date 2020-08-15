@@ -1,0 +1,105 @@
+.main-footer
+	padding: 30px 0 50px
+	box-shadow: inset 0 4px 34px rgba(0, 0, 0, 0.45)
+	background-color: $dark-bg
+
+	&__partners
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		align-items: baseline
+		justify-content: space-between
+		height: 100px
+		align-content: space-between
+
+	&__partner
+		margin-left: 3%
+
+		&:nth-child(1)
+			margin-left: 0
+		
+		// for vivogaming
+		&:nth-child(11), &:nth-child(15), &:nth-child(20)
+			align-self: center
+			
+
+	&__divider
+		margin-top: 37px
+		margin-bottom: 45px
+		width: 100%
+		height: 2px
+		background-color:#172146
+		border: none
+
+	&__age-limit
+		height: auto
+		max-width: unset
+		justify-self: flex-start
+		margin-top: 30px
+
+	&__logo 
+		display: flex
+		align-items: center
+
+		i 
+			font-size: 50px
+			color: #fff
+			margin-right: 7px
+
+	&__title
+		text-transform: uppercase
+		font-size: 30px
+
+	&__columns
+		display: flex
+		width: 100%
+		justify-content: space-between
+		flex-wrap: wrap
+	
+	&__column
+		flex: 1 1 115px
+		display: flex
+		flex-direction: column
+
+		& > h2
+			margin-bottom: 10px
+			text-align: left
+			font-weight: 500
+
+		&-link
+			color: $footer-text-color
+			font-size: 16px
+			line-height: 1.75
+
+		&:nth-child(1)
+			flex-grow: 3
+			align-items: flex-start
+			margin-top: -12px
+
+		&:nth-child(6)
+			flex-grow: 4
+
+		&-title
+			font-weight: 500
+			font-size: 18px
+			margin-bottom: 30px
+
+		&-title, &-text
+			color: #fff
+
+	&__copyrights
+		margin-top: 20px
+		text-align: center
+		color: rgba(255, 255, 255, .8)
+		width: 70%
+		font-size: 10px
+		font-weight: 500
+		line-height: 1.75
+		margin: 
+			left: auto
+			right: auto
+
+	&__company-link
+			color: #00ffd1
+
+					

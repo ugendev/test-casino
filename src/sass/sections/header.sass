@@ -14,12 +14,15 @@
 	&__navigation
 		font-size: 18px
 		font-weight: 700
-		min-width: calc(300 / (1420 / 100) * 1%)
 		display: flex
 		justify-content: space-between
 		align-items: center
-		a
-			display: block
+
+		& i 
+			margin-right: 25px
+
+	&__link
+		margin-right: 25px
 
 	&__search
 		color: $accent-color
@@ -53,7 +56,9 @@
 		color: #fff
 		font-size: 16px
 		font-weight: 700	
+		margin-left: 12px;
 
 	&__icon-user
 		color: $accent-color
 		margin-right: 3px
+	
