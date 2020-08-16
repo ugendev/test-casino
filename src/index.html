@@ -6,7 +6,17 @@
 	<link rel="stylesheet" href="css/styles.min.css">
 	<title>CASINO TEST</title>
 </head>
-<body>
+<body style="position: relative;">
+	<aside class="aside">
+		<div class="aside__language">
+			<img src="./static/ico/usa-flag.svg" alt="language">
+		</div>
+
+		<i class="aside__chat icon-comment-empty">
+
+		</i>
+	</aside>
+
 	<section class="main">
 		<header class="header">
 			<div class="container">
@@ -341,7 +351,7 @@
 		</div>
 	</section>
 	
-	<section class="games" style="display: none;">
+	<section class="games">
 		<div class="container">
 			<header class="games__header">
 				<h2 class="title">
@@ -369,7 +379,7 @@
 		</div>
 	</section>
 
-	<section class="last-winnings" style="display: none;">
+	<section class="last-winnings">
 		<div class="container">
 			<h2 class="title">
 				Winning now
@@ -505,7 +515,7 @@
 		</div>
 	</section>
 
-	<section class="games games_popular" style="display: none;">
+	<section class="games games_popular">
 		<div class="container">
 			<header class="games__header">
 				<h2 class="title">
@@ -533,7 +543,7 @@
 		</div>
 	</section>
 	
-	<section class="games games_recommends" style="display: none;">
+	<section class="games games_recommends">
 		<div class="container">
 			<header class="games__header">
 				<h2 class="title">
@@ -561,7 +571,7 @@
 		</div>
 	</section>
 
-	<section class="stats" style="display: none;">
+	<section class="stats">
 		<div class="container">
 			<header class="stats__header">
 				<h3 class="title title_small">
@@ -641,6 +651,10 @@
 						</div>
 					</div>
 				</div>
+
+				<h3 class="title title_small">
+					Biggest wins
+				</h3>
 	
 				<table class="stats__wins-table">
 					<thead>
@@ -793,37 +807,40 @@
 		</div>
 	</section>
 
-	<section class="accent-partners" style="display: none;">
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/neteller.svg" alt="neteller">
-		</a>
+	<section class="accent-partners">
+		<article class="accent-partners__wrapper">
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/neteller.svg" alt="neteller">
+			</a>
 
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/skrill.svg" alt="skrill">
-		</a>
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/skrill.svg" alt="skrill">
+			</a>
 
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/cubits.svg" alt="cubits">
-		</a>
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/cubits.svg" alt="cubits">
+			</a>
 
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/mastercard.svg" alt="mastercard">
-		</a>
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/mastercard.svg" alt="mastercard">
+			</a>
 
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/visa.svg" alt="visa">
-		</a>
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/visa.svg" alt="visa">
+			</a>
 
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/qiwi.svg" alt="qiwi">
-		</a>
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/qiwi.svg" alt="qiwi">
+			</a>
 
-		<a href="#" class="accent-partners__link">
-			<img src="./static/accent-partners/yandex.svg" alt="yandex">
-		</a>
+			<a href="#" class="accent-partners__link">
+				<img src="./static/accent-partners/yandex.svg" alt="yandex">
+			</a>
+
+		</article>
 	</section>
 
-	<footer class="main-footer" style="display: none;">
+	<footer class="main-footer">
 		<div class="container">
 			<ul class="main-footer__partners">
 				<li class="main-footer__partner">
